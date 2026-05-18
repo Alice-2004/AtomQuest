@@ -13,7 +13,7 @@ export default function ManagerGoals() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/goals"
+        "https://atomquest-backend-qfhk.onrender.com/goals"
       );
 
       setGoals(response.data);
@@ -51,7 +51,7 @@ export default function ManagerGoals() {
     try {
 
       await axios.put(
-        `http://127.0.0.1:8000/goals/approve/${goalId}`,
+        `https://atomquest-backend-qfhk.onrender.com/goals/approve/${goalId}`,
         {
           status: status,
           manager_comment:

@@ -46,7 +46,7 @@ export default function GoalForm() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/goals"
+        "https://atomquest-backend-qfhk.onrender.com/goals"
       );
 
       setSubmittedGoals(response.data);
@@ -144,7 +144,7 @@ export default function GoalForm() {
     try {
 
       await axios.put(
-        `http://127.0.0.1:8000/goals/${goalId}`,
+        `https://atomquest-backend-qfhk.onrender.com/goals/${goalId}`,
         editingGoal
       );
 
@@ -174,7 +174,7 @@ export default function GoalForm() {
     try {
 
       await axios.delete(
-        `http://127.0.0.1:8000/goals/${goalId}`
+        `https://atomquest-backend-qfhk.onrender.com/goals/${goalId}`
       );
 
       await fetchSubmittedGoals();
@@ -224,7 +224,7 @@ export default function GoalForm() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8000/goals",
+        "https://atomquest-backend-qfhk.onrender.com/goals",
         goals
       );
 

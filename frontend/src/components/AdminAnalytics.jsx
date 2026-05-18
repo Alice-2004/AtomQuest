@@ -13,11 +13,11 @@ export default function AdminAnalytics() {
     try {
 
       const goalsResponse = await axios.get(
-        "http://127.0.0.1:8000/goals"
+        "https://atomquest-backend-qfhk.onrender.com/goals"
       );
 
       const checkinsResponse = await axios.get(
-        "http://127.0.0.1:8000/checkins"
+        "https://atomquest-backend-qfhk.onrender.com/checkins"
       );
 
       setGoals(goalsResponse.data);

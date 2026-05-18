@@ -21,7 +21,7 @@ export default function CheckInForm() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/goals"
+        "https://atomquest-backend-qfhk.onrender.com/goals"
       );
 
       setGoals(response.data);
@@ -39,7 +39,7 @@ export default function CheckInForm() {
     try {
 
       const response = await axios.get(
-        "http://127.0.0.1:8000/checkins"
+        "https://atomquest-backend-qfhk.onrender.com/checkins"
       );
 
       setCheckins(response.data);
@@ -73,7 +73,7 @@ export default function CheckInForm() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8000/checkins",
+        "https://atomquest-backend-qfhk.onrender.com/checkins",
         {
           ...formData,
           actual_value: Number(
